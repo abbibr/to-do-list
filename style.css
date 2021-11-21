@@ -1,0 +1,105 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+#block
+{
+    width: 40%;
+    min-height: 100px;
+    background-color: rgb(27, 157, 180);
+    border-radius: 15px;
+    padding: 35px;
+}
+.text
+{
+    color: white;
+}
+#text
+{
+    text-align: center;
+}
+.footer
+{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 5px 0;
+}
+li.list
+{
+    text-align: left;
+    list-style: none;
+    background-color: white;
+    padding: 10px 5px;
+    border-radius: 10px;
+    width: 70%;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+    margin-top: 7px;
+    left: 13%;
+    top: 10px;
+    animation: add 0.57s ease-in;
+}
+li button.btn
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 9px 16px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(214, 61, 61);
+    color: white;
+    font-size: 17px;
+}
+.footer
+{
+    margin-top: 17px;
+}
+.footer input
+{
+    border: none;
+    padding: 20px 70px;
+    border-radius: 10px 0 0 10px;
+    font-size: 17px;
+}
+.footer input:focus
+{
+    outline: none;
+}
+.footer button
+{
+    border: none;
+    padding: 20px;
+    margin-left: -4px;
+    border-radius: 0 10px 10px 0;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+@keyframes add
+{
+    from
+    {
+        transform: scale(0);
+    }
+    to
+    {
+        transform: scale(1);
+    }
+}
