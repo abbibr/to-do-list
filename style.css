@@ -6,93 +6,112 @@
 }
 body
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 500px;
+    background-color: rgb(61, 37, 139);
+    color: white;
 }
 
-#block
+#content
 {
-    width: 40%;
-    min-height: 100px;
-    background-color: rgb(27, 157, 180);
-    border-radius: 15px;
-    padding: 35px;
-}
-.text
-{
-    color: white;
-}
-#text
-{
+    margin-top: 57px;
+    font-size: 40px;
     text-align: center;
+    font-family: sans-serif;
 }
-.footer
-{
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    padding: 5px 0;
-}
-li.list
-{
-    text-align: left;
-    list-style: none;
-    background-color: white;
-    padding: 10px 5px;
-    border-radius: 10px;
-    width: 70%;
-    color: #000;
-    font-weight: bold;
-    position: relative;
-    margin-top: 7px;
-    left: 13%;
-    top: 10px;
-    animation: add 0.57s ease-in;
-}
-li button.btn
+.form
 {
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 9px 16px;
-    border-radius: 0 10px 10px 0;
-    border: none;
-    cursor: pointer;
-    background-color: rgb(214, 61, 61);
-    color: white;
-    font-size: 17px;
+    top: 35%;
+    left: 30%;
 }
-.footer
+.form
 {
-    margin-top: 17px;
+    display: flex;
+    align-items: center;
 }
-.footer input
+input[type='text']
 {
+    padding: 15px 45px;
+    font-size: 18px;
     border: none;
-    padding: 20px 70px;
-    border-radius: 10px 0 0 10px;
-    font-size: 17px;
+    position: relative;
 }
-.footer input:focus
+input[type='text']:focus
 {
     outline: none;
 }
-.footer button
+.a i
 {
-    border: none;
-    padding: 20px;
-    margin-left: -4px;
-    border-radius: 0 10px 10px 0;
-    font-size: 17px;
+    background-color: black;
     cursor: pointer;
-    background-color: blue;
+    position: absolute;
+    left: 51.5%;
+    padding: 17.5px;
+}
+.b
+{
+    margin-left: 57px;
+}
+.b p
+{
+    padding: 15px 112px 15px 12px;
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    float: left;
+    position: relative;
+    font-weight: bold;
+    /* tepa o`ng past chap */
+}
+.b i
+{
+    position: absolute;
+    left: 91.5%;
+    background-color: black;
     color: white;
+    padding: 16px;
+    cursor: pointer;
+}
+.texts
+{
+    position: absolute;
+    top: 45%;
+    left: 39%;
+}
+.texts .row
+{
+    animation: animate 0.45s ease-in;
+}
+li
+{
+    list-style: none;
+    padding: 14px 75px 14px 12px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    margin-bottom: 10px;
+    float: left;
+}
+.texts .check1
+{
+    background-color: rgb(16, 165, 16);
+    color: white;
+    padding: 16.5px;
+    cursor: pointer;
+}
+.texts .trash1
+{
+    background-color: red;
+    color: white;
+    padding: 16.5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.complete
+{
+    opacity: 0.5;
 }
 
-@keyframes add
+@keyframes animate
 {
     from
     {
